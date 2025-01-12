@@ -1,0 +1,27 @@
+/* ProductGrid.css */
+.container {
+    /*margin-top: 20px; /* Add top margin for spacing */
+    align-items: center;
+    margin: 5% 5% 2% 10% ;
+    width:99%;
+    height:90%;
+    padding:2.5%;
+  }
+  
+  .row {
+    justify-content: center; /* Center the cards in the row */
+    margin-bottom: 0rem; 
+  }
+
+  .col-12.col-sm-6.col-md-4 {
+    margin-bottom: 0rem; /* Adjust the bottom margin for columns */
+  }
+  
+  .card {
+    /* Ensure uniform card height for consistent layout */
+    height: 100%;
+    margin-bottom: 1rem;
+    
+
+  }
+  
