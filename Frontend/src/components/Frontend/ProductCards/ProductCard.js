@@ -24,7 +24,7 @@ function ProductCard({ product }) {
         whileHover="hover"
       >
         <img
-          src={`${process.env.PUBLIC_URL}/${product.images[0]}`}
+          src={`./${product.images[0]}`}
           alt={product.name}
           className="product-card__image"
         />
