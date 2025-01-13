@@ -1,6 +1,7 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import './Banner.css';
+//const mongo="https://perfumes-atpy.onrender.com" 
 
 const offers = [
   {
