@@ -6,7 +6,7 @@ import './Banner.css';
 const offers = [
   {
     id: 1,
-    image: "../../../../public/perfumeBanner.jpg",
+    image: ".${process.env.PUBLIC_URL}/perfumeBanner.jpg",
     title: ' ',
     text: ' ',
   },
