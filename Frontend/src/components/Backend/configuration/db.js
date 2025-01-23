@@ -2,8 +2,8 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
 
-// const mongo="https://perfumes-atpy.onrender.com";
-const mongo="mongodb://localhost:27017/perfumeShopDB"
+const mongo="https://perfumes-atpy.onrender.com";
+//const mongo="mongodb://localhost:27017/perfumeShopDB"
 
 const connectDB = async () => {
   try {
