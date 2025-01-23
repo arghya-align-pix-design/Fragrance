@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./src/components/Backend
+      dockerfile: Dockerfile
+    ports:
+      - "4100:4100"
+    environment:
+      - MONGO_URI=mongodb://localhost:27017/perfumeShopDB
+      - PORT=4100
+     
+
+  frontend:
+    build:
+      context: ./src/components/Frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_URL=http://localhost:4100/api

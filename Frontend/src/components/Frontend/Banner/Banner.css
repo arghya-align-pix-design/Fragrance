@@ -1,0 +1,55 @@
+/* Banner.css */
+.banner {
+  position: relative;
+  width: 100%;
+}
+
+.carousel-item {
+  height: 400px;
+}
+
+/* Adjust banner height for smaller screens */
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 250px;
+  }
+}
+
+.banner-image {
+  object-fit:contain;
+  height: 100%;
+  transition: transform 0.3s ease; /* Smooth transition for throb effect */
+}
+
+/* Zoom in and out on hover */
+.banner:hover .carousel-item img {
+  animation: throb 1s infinite alternate;
+}
+
+/* Throb animation */
+@keyframes throb {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+/* Carousel caption styling */
+.carousel-caption {
+  background-color: transparent;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+/* Responsive caption font size */
+@media (max-width: 768px) {
+  .carousel-caption h3 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+}
