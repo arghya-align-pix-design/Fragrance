@@ -8,10 +8,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "ajv": "^8.17.1",
-<<<<<<< HEAD
     "axios": "^1.7.9",
-=======
->>>>>>> 4d4aaae9003cdad8b313425e3a1fd28821c02b35
     "bootstrap": "^5.3.3",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
@@ -27,10 +24,6 @@
     "router": "^1.3.8",
     "web-vitals": "^2.1.4"
   },
-<<<<<<< HEAD
-=======
-  
->>>>>>> 4d4aaae9003cdad8b313425e3a1fd28821c02b35
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
