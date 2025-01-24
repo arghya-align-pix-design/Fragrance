@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import axios from "axios";
 import "./AuthPage.css";
 import { useNavigate } from "react-router-dom";
+const BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
 const AuthPage = () => {
   const [selected, setSelected] = useState(null); // "signin" or "signup"
@@ -39,7 +40,7 @@ const AuthPage = () => {
   // Handle Sign-Up form submission
   const handleSignUpSubmit = async (e) => {
     e.preventDefault();
-    const endpoint = "http://localhost:4100/api/users/signup";
+    const endpoint = `${BASE_URL}/api/users/signup`;
 
     try {
       const response = await axios.post(endpoint, signUpData);
@@ -57,7 +58,7 @@ const AuthPage = () => {
   // Handle Sign-In form submission
   const handleSignInSubmit = async (e) => {
     e.preventDefault();
-    const endpoint = "http://localhost:4100/api/users/signin";
+    const endpoint = `${BASE_URL}/api/users/signin`;
     //make the endpoint in mongodb atlast to grab the data process.env thingy
 
     try {
@@ -75,8 +76,8 @@ const AuthPage = () => {
 
   //   const endpoint =
   //     selected === "signup"
-  //       ? "http://localhost:4100/api/users/signup"
-  //       : "http://localhost:4100/api/users/signin";
+  //       ? `${BASE_URL}/api/users/signup`
+  //       : `${BASE_URL}/api/users/signin`;
 
   //   try {
   //     const response = await axios.post(endpoint, formData);
