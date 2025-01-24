@@ -2,6 +2,8 @@
 
 const Product = require('../models/products');
 //const Reviews= require('../models/reviews');
+//const connectDB= require('../configuration/db')
+
 
 const getAllProducts = async () => {
     // const collection= connectDB.collection('products');

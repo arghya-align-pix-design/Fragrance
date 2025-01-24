@@ -6,10 +6,10 @@ import { Link } from 'react-router-dom';
 const hoverVariants = {
   from: { scale: 1 }, // Default scale
   hover: { 
-    scale: 1.1,
+    scale: 1.02,
     // Zoom effect
-    transition: { type: "spring", stiffness: 300, damping: 100,
-      duration: 0.5, repeat: Infinity, repeatType: "reverse",
+    transition: { type: "spring", stiffness: 200, damping: 150,
+      duration: 1, repeat: Infinity, repeatType: "loop",
       ease: "easeInOut",
      } // Smooth hover
   },
@@ -24,7 +24,7 @@ function ProductCard({ product }) {
         whileHover="hover"
       >
         <img
-          src={`../../../../public/${product.images[0]}`}
+          src={`./${product.images[0]}`}
           alt={product.name}
           className="product-card__image"
         />

@@ -58,6 +58,7 @@ const AuthPage = () => {
   const handleSignInSubmit = async (e) => {
     e.preventDefault();
     const endpoint = "http://localhost:4100/api/users/signin";
+    //make the endpoint in mongodb atlast to grab the data process.env thingy
 
     try {
       const response = await axios.post(endpoint, signInData);

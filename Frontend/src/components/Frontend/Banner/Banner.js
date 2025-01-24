@@ -12,13 +12,13 @@ const offers = [
   },
   {
     id: 2,
-    image: `${process.env.PUBLIC_URL}/perfumeBanner.jpg`,
+    image: "./perfumeBanner.jpg",
     title: '',
     text: '',
   },
   {
     id: 3,
-    image: `${process.env.PUBLIC_URL}/perfumeBanner.jpg`,
+    image: "./perfumeBanner.jpg",
     title: ' ',
     text: ' ',
   },

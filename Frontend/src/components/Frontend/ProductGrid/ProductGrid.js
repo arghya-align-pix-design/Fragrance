@@ -11,7 +11,7 @@ function ProductGrid() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('http://localhost:4100/api/products'); // Adjust the URL if needed
+        const response = await fetch('https://perfumes-atpy.onrender.com/api/products'); // Adjust the URL if needed
         if (!response.ok) {
           throw new Error('Failed to fetch products');
         }
