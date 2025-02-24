@@ -1,4 +1,5 @@
 import React from 'react';
+//import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './Navbar.css';
 import { useNavigate } from "react-router-dom";
 
@@ -15,15 +16,15 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="navbar__logo">
+      <button className="navbar__logo" onClick={() => navigate("/")}>
         Perfume Shop
-      </div>
+      </button>
       <ul className="navbar__links">
-        <li className="navbar__item"><a href="#home" className="navbar__link">Home</a></li>
-        <li className="navbar__item"><a href="#collections" className="navbar__link">Collections</a></li>
-        <li className="navbar__item"><a href="#offers" className="navbar__link">Offers</a></li>
-        <li className="navbar__item"><a href="#contact" className="navbar__link">Contact</a></li>
-      </ul>
+        <li className="navbar__item"><button className="navbar__item" onClick={() => navigate("/")}>Home</button></li>
+        <li className="navbar__item"><button  className="navbar__item" onClick={() => navigate("/collections")}> Collections </button></li>
+        <li className="navbar__item"> <button  className="navbar__item" onClick={() => navigate("/offers")}> Offers </button></li>
+        <li className="navbar__item"><button  className="navbar__item" onClick={() => navigate("/contact")}>Contact</button></li>
+      </ul> 
       <button className="navbar__button"
       onClick={() => navigate("/auth")} >Sign Up/Sign In</button> {/*className="auth-button"*/}
     </nav>

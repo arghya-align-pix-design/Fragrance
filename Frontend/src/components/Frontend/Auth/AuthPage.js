@@ -39,7 +39,7 @@ const AuthPage = () => {
   // Handle Sign-Up form submission
   const handleSignUpSubmit = async (e) => {
     e.preventDefault();
-    const endpoint = "http://localhost:4100/api/users/signup";
+    const endpoint = "https://perfumes-atpy.onrender.com/api/users/signup";
 
     try {
       const response = await axios.post(endpoint, signUpData);
@@ -57,7 +57,7 @@ const AuthPage = () => {
   // Handle Sign-In form submission
   const handleSignInSubmit = async (e) => {
     e.preventDefault();
-    const endpoint = "http://localhost:4100/api/users/signin";
+    const endpoint = "https://perfumes-atpy.onrender.com/api/users/signin";
     //make the endpoint in mongodb atlast to grab the data process.env thingy
 
     try {

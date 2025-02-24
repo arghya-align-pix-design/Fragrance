@@ -4,12 +4,16 @@ import './ProductCard.css';
 import { Link } from 'react-router-dom';
 
 const hoverVariants = {
-  from: { scale: 1 }, // Default scale
+  from: { scale: 1.9 }, // Default scale
   hover: { 
     scale: 1.02,
+    boxShadow: "5px 10px 4px rgb(13, 4, 31)", // Add box shadow
     // Zoom effect
-    transition: { type: "spring", stiffness: 200, damping: 150,
-      duration: 1, repeat: Infinity, repeatType: "loop",
+    transition: {
+      type: "spring",
+      stiffness: 250, damping: 180,
+      duration: 1.0, repeat: Infinity, 
+      repeatType: "reverse",
       ease: "easeInOut",
      } // Smooth hover
   },
