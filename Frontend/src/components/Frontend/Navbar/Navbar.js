@@ -24,9 +24,12 @@ function Navbar() {
         <li className="navbar__item"><button  className="navbar__item" onClick={() => navigate("/collections")}> Collections </button></li>
         <li className="navbar__item"> <button  className="navbar__item" onClick={() => navigate("/offers")}> Offers </button></li>
         <li className="navbar__item"><button  className="navbar__item" onClick={() => navigate("/contact")}>Contact</button></li>
+        <li className="navbar__item"><button  className="navbar__item" onClick={() => navigate("/contact")}>Search</button></li>
+       
       </ul> 
       <button className="navbar__button"
       onClick={() => navigate("/auth")} >Sign Up/Sign In</button> {/*className="auth-button"*/}
+      
     </nav>
   );
 }

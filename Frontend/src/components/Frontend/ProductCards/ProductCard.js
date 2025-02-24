@@ -7,7 +7,7 @@ const hoverVariants = {
   from: { scale: 1.9 }, // Default scale
   hover: { 
     scale: 1.02,
-    boxShadow: "5px 10px 4px rgb(13, 4, 31)", // Add box shadow
+    // boxShadow: "5px 10px 4px rgb(13, 4, 31)", // Add box shadow
     // Zoom effect
     transition: {
       type: "spring",
@@ -25,7 +25,11 @@ function ProductCard({ product }) {
       <motion.div
         className="product-card"
         variants={hoverVariants}
-        whileHover="hover"
+        whileHover={{
+          scale: 1.05,
+          boxShadow: "10px 10px 20px rgba(0, 0, 0, 0.2)", // Properly placed inside whileHover
+          transition: { type: "spring", stiffness: 200, damping: 15 },
+        }}
       >
         <img
           src={`./${product.images[0]}`}

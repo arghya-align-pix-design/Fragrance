@@ -1,70 +1,4 @@
-/* ProductCard.css
 
-.product-card {
-  position: relative;
-  width: 95%;
-  display: inline-block;
-  height: auto;
-  margin: 0%;
-  background-color: rgba(240, 228, 255, 0.2); /* Subtle light violet background 
-  border: 1px solid #d9c2f2; /* Soft violet border 
-  border-radius: 8px;
-  padding: 0.5rem;
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}*/
-/*
-.product-card:hover {
-  transform: scale(1.05); /* Slight zoom on hover 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}*/
-/*
-.product-card__image {
-  width: 100%;
-  height: auto; /* Adjust height to scale with the width 
-  border-radius: 5px;
-  margin-bottom: 0.5rem;
-}*/
-/*
-.product-card__name {
-  font-size: 1.2rem;
-  color: #333;
-  margin: 0.5rem 0;
-}*/
-/*
-.product-card__price {
-  font-size: 1rem;
-  color: #7a42f4; /* Highlight price with a violet color 
-  font-weight: bold;
-}*/
-
-/* Glowing border animation 
-.product-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 8px;
-  padding: 2px; /* Ensures the glow is just outside the card 
-  background: linear-gradient(90deg, rgba(122, 66, 244, 0.5), rgba(240, 228, 255, 0.2), rgba(122, 66, 244, 0.5));
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask-composite: exclude;
-  -webkit-mask-composite: destination-out;
-  animation: glow-rotate 4s linear infinite;
-}*/
-
-/*@keyframes glow-rotate {
-  0% {
-      transform: rotate(0deg);
-  }
-  100% {
-      transform: rotate(360deg);
-  }
-} */
 /* ProductCard.css */
 
 /* ProductCard.css */
@@ -123,7 +57,7 @@
   height: 100%;
   border-radius: 8px;
   border: 2px solid transparent;
-  background: linear-gradient(to right, rgba(122, 66, 244, 0.5), rgba(240, 228, 255, 0.2), rgba(122, 66, 244, 0.5));
+  background: linear-gradient(to right, rgba(82, 18, 220, 0.5), rgba(240, 228, 255, 0.2), rgba(122, 66, 244, 0.5));
   background-size: 300% 300%; /* Makes the glow dynamic */
   animation: glow-snake 4s linear infinite;
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
